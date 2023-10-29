@@ -1,100 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--divinectorweb.com-->
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quotes Generator</title>
     <link rel="stylesheet" href="style.css">
-    <title>To-Do List</title>
 </head>
 <body>
+    <div class="container">
+      
+      <div class="header">
+        <h2></h2>
+      </div>
+  
+      <div class="main-content">
+       
+        <div class="text-area">
+          <span class="quote">"Life is what happens when you're busy making other plans"</span>
+        </div>
+        
+        <div class="writer">– John Lennon</div>
+  
+        <div class="button-area">  
+          <div class="btn">
+            <button id="Qbtn">Find Quotes</button>
+          </div>
+        </div>
+        
+      </div>
+  
+    </div>
+    <body>
+        <div class="navigation">
+            <ul>
+              <li class="list active">
+                <a href="https://kayoto0.github.io/home/" target="blank">
+                  <span class="icon">
+                    <ion-icon name="home"></ion-icon>
+                  </span>
+                  <span class="text">Home</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="" target="blank">
+                  <span class="icon">
+                    <ion-icon name="heart"></ion-icon>
+                  </span>
+                  <span class="text">Love</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="" target="blank">
+                  <span class="icon">
+                    <ion-icon name="chatbubble"></ion-icon>
+                  </span>
+                  <span class="text">Quote</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="https://kayoto0.github.io/listpass/" target="blank">
+                  <span class="icon">
+                    <ion-icon name="list-circle"></ion-icon>
+                  </span>
+                  <span class="text">To Do List</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="https://kayoto0.github.io/fun/" target="blank">
+                  <span class="icon">
+                    <ion-icon name="game-controller"></ion-icon>
+                  </span>
+                  <span class="text">Fun</span>
+                </a>
+              </li>
+              <div class="indicator"></div>
+            </ul>
+          </div>
+          <script>
+            const list= document.querySelectorAll('.list');
+            function activeLink(){
+              list.forEach((item) =>
+              item.classList.remove('active'));
+              this.classList.add('active');
+            }
+            list.forEach((item) =>
+            item.addEventListener('click',activeLink));
+           </script>
+           
+           
+          
+          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">;
+            </script>
+          <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js">;
+          
+          
+            </script>
+          </script>
+          </body>
+          </html>
+          
     <script src="script.js"></script>
 </body>
-</script>
-<body>
-   <div class "wrapper">
-       <h2></h2>
-       <div class="box">
-           <div></div>
-           <div></div>
-           <div></div>
-           <div></div>
-           <div></div>
-           <div></div>
-           <div></div>
-           <div></div>
-           <div></div>
-           <div></div>
-       </div>
-         </style>
-         </head>
-         <body>
-        </body>
-        <div class="navigation">
-          <ul>
-            <li class="list active">
-              <a href="https://kayoto0.github.io/home/" target="blank">
-                <span class="icon">
-                  <ion-icon name="home"></ion-icon>
-                </span>
-                <span class="text">Home</span>
-              </a>
-            </li>
-            <li class="list">
-              <a href="https://kayoto0.github.io/pass/" target="blank">
-                <span class="icon">
-                  <ion-icon name="heart"></ion-icon>
-                </span>
-                <span class="text">Love</span>
-              </a>
-            </li>
-            <li class="list">
-              <a href="https://kayoto0.github.io/chat/" target="blank">
-                <span class="icon">
-                  <ion-icon name="chatbubbles"></ion-icon>
-                </span>
-                <span class="text">Chat</span>
-              </a>
-            </li>
-            <li class="list">
-              <a href="" target="blank">
-                <span class="icon">
-                  <ion-icon name="list-circle"></ion-icon>
-                </span>
-                <span class="text">To Do List</span>
-              </a>
-            </li>
-            <li class="list">
-              <a href="https://kayoto0.github.io/funmenu/" target="blank">
-                <span class="icon">
-                  <ion-icon name="game-controller"></ion-icon>
-                </span>
-                <span class="text">Fun</span>
-              </a>
-            </li>
-            <div class="indicator"></div>
-        </li2>
-          </ul>
-        </div>
-        <script>
-          const list= document.querySelectorAll('.list');
-          function activeLink(){
-            list.forEach((item) =>
-            item.classList.remove('active'));
-            this.classList.add('active');
-          }
-          list.forEach((item) =>
-          item.addEventListener('click',activeLink));
-         </script>
-         
-         
-        
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">;
-          </script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js">;
-        
-        
-          </script>
-        </script>
-        </body>
-        </html>
-        
+</html>
